@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="/static/style.css">  
+        <title>Health Care</title>
+    </head>
+<body>
+<nav id="myHeader">
+    <div class="logo">
+        <a href="{{ url_for('Home') }}"><img src="/static/final_pixian_ai.png" height="200" width="200"></a>
+    </div>
+    <ul id="menuList">
+        <li><a href="{{ url_for('Home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('register') }}">Registration</a></li>
+        <li><a href="{{ url_for('login') }}">Login</a></li>
+        <li><a href="{{ url_for('blog') }}">Blog</a></li>
+    </ul>
+    <div class="menu-icon">
+        <i class="fa-solid fa-bars" style="color: #000000;" onclick="toggleMenu()"></i>
+    </div>
+
+</nav>
+<script src="/static/all.js"></script>
+<script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+{% block body %} {% endblock %}
+</body>
+</html>

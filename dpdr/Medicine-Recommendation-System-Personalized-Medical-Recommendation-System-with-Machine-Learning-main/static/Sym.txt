@@ -1,0 +1,29 @@
+#Diabetes 
+Chronic condition affecting blood sugar levels due to insulin dysfunction, potentially leading to serious complications.
+
+#Heart attack
+Sudden blockage of blood flow to the heart, causing chest pain, shortness of breath, and potential death.
+
+#Hypothyroidism
+Thyroid gland underactive, causing fatigue, weight gain, cold sensitivity, and potential complications if untreated.
+
+#Malaria
+Mosquito-borne infectious disease causing fever, chills, flu-like symptoms, and potentially life-threatening complications if untreated.
+
+#Gastroenteritis
+Inflammation of the stomach and intestines, causing diarrhea, vomiting, abdominal pain, and dehydration, often viral.
+
+#Bronchial Asthma
+Chronic respiratory condition causing airway inflammation, constriction, coughing, and wheezing, triggered by various factors, often allergens.
+
+#Migraine
+Neurological disorder causing severe headaches, often accompanied by nausea, sensitivity to light and sound, and visual disturbances.
+
+#Cervical spondylosis
+Degenerative condition affecting the cervical spine, causing neck pain, stiffness, and potentially nerve compression symptoms like numbness.
+
+#Dengue
+Mosquito-borne viral infection causing high fever, severe joint and muscle pain, and potentially life-threatening complications.
+
+#Common Cold
+Mild viral infection of the upper respiratory tract, causing coughing, sneezing, congestion, and sore throat.

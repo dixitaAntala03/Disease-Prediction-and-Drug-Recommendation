@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div class="Wrapper">
+        <div class="Wrapper-inner">
+           <form action="/login" method="Post" >
+            <h1>Login Here</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Enter Username" id="username" name="username">
+                <i class="fa-solid fa-user"></i> 
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Enter Password" id="password" name="password">
+                <i class="fa-solid fa-lock"></i> 
+            </div>
+            <div class="remember-forget">
+                <input type="checkbox"> Remember me <a href="">forget-password</a>
+            </div>
+            <div class="btn">
+                <button><a href="/predict">Login</a></button>
+            </div>
+            <div class="registration">
+                <p>if you don't have an account then
+                <a href="/register">Registration</a></p>
+            </div>
+           </form>
+        </div>
+    </div>
+
+    <script src="/static/all.js">
+    </script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    {% endblock %}
+</body>
+</html>

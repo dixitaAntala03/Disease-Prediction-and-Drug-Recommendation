@@ -1,0 +1,213 @@
+/* index.html css style sheet */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    
+  }  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    
+  }
+  /* *********************************** nav bar *********************** */
+  nav {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 90px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(145, 146, 148, 0.822);
+    box-shadow: 1px 3px 6px 0.5px;
+  }
+  
+  .logo {
+    color: #fff;
+    padding-top: 30px;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  nav ul li ,h1 {
+    list-style-type: none;
+    font-size: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  nav ul li a:hover {
+    color: rgb(94, 94, 141);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  .menu-icon i {
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .home_aboutus {
+    padding: 100px;
+    background-color: rgb(145, 146, 148);
+  }
+  
+  @media (max-width: 600px) {
+    nav ul {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      text-align: center;
+      background: #45adfc;
+      gap: 0;
+      overflow: hidden;
+    }
+  
+    nav ul li {
+      padding: 20px;
+      padding-top: 0;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    #menuList {
+      transition: all 0.5s;
+    }
+  }
+  .disease{
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 550px;
+  }
+  
+  /* *************************************** body ********************** */
+  .body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 94vh;
+    background-image: url("/static/predic.jpg");
+    background-size: cover;
+    background-position: center; 
+  }
+  input{
+    width: calc(100% - 40px);
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: black;
+    padding: 10px;
+  }
+
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    padding: 30px 40px;
+    box-shadow: 1px 3px 6px 0.5px;
+    border-radius: 10px;
+        }
+        .symptom_list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .lbl {
+            padding-right: 40px;
+            padding-bottom: 30px; 
+            font-size: 20px;
+            font-weight: lighter-bold;
+            color: #222831;
+        }
+        #symptomInput {
+            width: 400px;
+            margin-bottom: 30px;
+        }
+
+        .results {
+            margin-left: 200px;
+        }
+button {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(5, 252, 231);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 1px 4px 7px 0.5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+.result{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 85vh;
+  background-image: url("/static/result.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(155, 252, 244);
+}
+
+.note {
+  padding: 30px 80px;
+}
+
+.result-container{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 650px;
+  margin: 0px 400px;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  padding: 30px 40px;
+  box-shadow: 1px 40px 70px 0.5px;
+  border-radius: 10px;
+}
+
+tr td ul{
+  list-style-type: none;
+}

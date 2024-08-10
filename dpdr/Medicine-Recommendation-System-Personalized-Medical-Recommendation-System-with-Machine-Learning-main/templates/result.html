@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Health Check</title>
+    <link rel="stylesheet" href="/static/style2.css"> 
+        
+  </head>
+  <body onLoad="populateSymptomsList1(), populateSymptomsList2(), populateSymptomsList3(), populateSymptomsList4(), populateSymptomsList5();">
+    <nav id="myHeader">
+        <div class="logo">
+            <a href="{{ url_for('Home') }}"><img src="/static/final_pixian_ai.png" height="200" width="200"></a>
+        </div>
+        <h1>Welcome For Disease Prediction Results</h1>
+        <ul  id="menuList">
+        <li><a href="{{ url_for('Home') }}">Logout</a></li>
+            <li><a href="/predict">Back</a></li>
+        </ul>
+    </nav>
+{% if predicted_disease %}
+
+<!-- Results -->
+<div class="result">
+
+    <div class="note">
+        <h1>The information provided on this Website is for general informational purposes only. All information on the Website is provided in good faith; however, we make no representation or warranty of any kind.</h1>
+    </div>
+
+    <div class="result-container">
+        <!-- Buttons to toggle display -->
+        <table border="3">
+            <tr>
+                <th>Disease</th>
+                <td>{{ predicted_disease }}</td>
+            </tr>
+            
+            <tr>
+                <th>Description</th>
+                <td>{{ dis_des }}</td>
+            </tr>
+
+            <tr>
+                <th>Precaution</th>
+                <td>
+                    <ul>
+                        {% for i in my_precautions %}
+                            <li>{{ i }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Medications</th>
+                <td>
+                    <ul>
+                        {% for i in medications %}
+                            <li>{{ i }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Suggestions</th>
+                <td>
+                    <ul>
+                        {% for i in workout %}
+                            <li>{{ i }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Diets</th>
+                <td>
+                    <ul>
+                        {% for i in my_diet %}
+                            <li>{{ i }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+             
+        </table>    
+    </div>
+</div>
+
+
+{% endif %}
+<script src="/static/all.js"></script>
+<script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+  </body>
+  </html>
